@@ -1,0 +1,552 @@
+*
+{
+  margin:0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url(images/homeee.jpg);
+  color: #fff;
+  max-width: 1440px;
+  
+}
+
+/*--------------------------header--------------------*/
+
+header{
+  display: flex;
+  width: 100%;
+  height: 100px;
+
+}
+header .header-text{
+  width: 40%;
+  height: 100px;
+}
+header .header-text img{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+header .header-text p{
+  padding-left: 78px;
+  padding-top: 37px;
+  font-family:Helvetica;
+  font-size: 25px;
+  font-weight: bolder;
+}
+header nav{
+  display: block;
+  margin: 30px 0 0 15%;
+  justify-content: space-between;
+}
+header nav ul li{
+    display:inline-block ;
+    margin: 10px 20px;
+}
+header nav ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;  
+}
+header nav ul li a::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #0cd6dd;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+  }
+
+/*--------------------------head section--------------------*/
+
+#header{
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 7%;
+}
+
+#header h1{
+  font-size: 60px;
+}
+#header h1 span{
+  font-size: 60px;
+  color: yellow;
+}
+#header h2{
+  font-size: 60px;
+}
+#header h2 span{
+  font-family: Helvetica;
+  font-size: 60px;
+}
+#header a{
+  margin-bottom: 16%;
+}
+#menu-icon{
+  font-size: 25px;
+  cursor: pointer;  
+  display: none;
+}
+
+/* ------------------------about section----------------------- */
+
+#about{
+  color: #ababab;
+  background-position:center;
+}
+.container{
+  padding: 10% 10% 0 10%;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;
+}
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-1 img:hover{
+  box-shadow: rgba(0, 217, 255, 0.35) 5px 5px 5px 5px;
+  transform: translateY(-5px);
+}
+.about-col-2{
+flex-basis: 60%;
+  }
+  .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+  }
+  .tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+  }
+  .tab-links{
+    margin-right:50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+  .tab-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #0cd6dd;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+.tab-links.active-links::after{
+  width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span{
+  color: #0cd6dd;
+  font-size: 14px;
+}
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+/* =============serivese */
+.services-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services-list .box{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 30px;
+  transition: 0.5s;
+  transform: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-list .box .sb{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+/* .services-list div i{}/ */
+.services-list .box h2{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.services-list .box:hover{
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 217, 255, 0.35) 0px 5px 15px;
+
+}
+
+/* Container for the progress bar */
+.progress-container{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar{
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-css{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-css{
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-js{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-js{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-react{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-react{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-java{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-java{
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-spring{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-spring{
+  position: absolute;
+  width: 57%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-c{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-c{
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-sql{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-sql{
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-vs{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-vs{
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-git{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-git{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-hub{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-hub{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+.progress-container-ide{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.progress-bar-ide{
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background: #0cd6dd;
+  border-radius: 8px;
+}
+/* -----portfolio */
+#portfolio{
+  padding: 50px 0;
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work.img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+
+}
+.layer{
+
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+
+}
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+
+}.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 1 8px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+}
+.work:hover img{
+  transform: scale(1.1);
+
+}
+.work:hover .layer{
+  height: 100%;
+
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #09f5e9;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #f5f5f5;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background-color: #ff004f;
+
+}
+/* ----contact} */
+
+.social-icon img{
+
+  width: 50px;
+}
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+.contact-left p{
+  margin-top: 30px;
+
+}.contact-left p i{
+  color: #ff004f;
+margin-left: 15px;
+font-size: 25px;
+}
+.social-icon{
+  margin-top: 30px;
+
+}
+.social-icon a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+   
+
+}
+.social-icon a:hover{
+  color: #00e1ff;
+  transform: translateY(-5px);
+}
+.btn.btn2{
+  display: inline-block;
+  background: #00a2ff;
+
+}
+.contact-right form{
+  width: 100%;
+}
+form input,form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding:15px;
+  margin: 14px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.oursite{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+
+}.oursite i{
+  color: #ff004f;
+}

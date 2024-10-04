@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thoufik portfilo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/mobile-view.css">
+
+    <!-------------icon tag------------------>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-text">
+            <img src="images/portlogo.jpg"> 
+            <p>Portfolio</p>
+        </div>
+        <nav id="nav-bar" >
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>   
+        </nav>
+        <div class="bx bx-menu" id="menu-icon" onclick="btnclick()"> </div>
+    </header>
+    <section id="header">
+                <h1>Hi, I'm<span>Thowpic</span></h1>
+                <h2>An Innovative <span>Software Developer !</span></h2>
+                <a href="images/thowpic cv.pdf" class="btn btn2">Dowload CV</a>
+    </section>
+    <!-- -------------------------------about ------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a passionate software Developer with strong foundation in front-end technologics and
+                        fundamantal knowledge of back-end.I aim to contribute my technical expertise to a dynamic
+                        team.My Goal is to leverage my skills in creating user-centric,scalable applications while
+                        continously learning and envolving i a fast-paced development environment.i am eager to
+                        contribute to innovative projects
+                        and grow within an organization the values creativity,problem-solving,and collabration. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Soft Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Certified</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li><span><strong>Communication</strong></span><br>Tamil,English</li>
+
+                            <li><span><strong> Skills</strong></span><br>Adablity,Team Lead,</li>
+
+                            <li><span><strong>Programming Languages Known</strong></span><br>Java,C,C++.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span><strong>Cousera(Professional Certificate)</strong></span><br>Full Stack Software
+                                Developement</li>
+
+                            <li><span><strong>LinkedIn</strong></span><br> Core Java </li>
+                            <li><span><strong>Microsoft</strong></span><br>Microsoft(Excel Fundamentals)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><strong>2022-2024 (70%)</strong></span><br>Bachelor's Computer Application</li>
+
+                            <li><span><strong>2020-2022 (85%)</strong></span><br>Higher Secondary(11th,12th)</li>
+
+                            <li><span><strong>2019 (75%)</strong></span><br>R.C.M Primary School(10th)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------serivec------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div class="box box-1">
+                    <h2>Front-End</h2>
+
+                    <div class="sb sb-1">
+                        <img src="images/icons8-html-48.png" width="35px" />
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                        <p>90%</p>
+                    </div>
+                    <div class="sb sb-2">
+                        <img src="images/css-3.png" width="35px" />
+                        <div class="progress-container-css">
+                            <div class="progress-bar-css" id="progress-bar-css"></div>
+                        </div>
+                        <p>70%</p>
+                    </div>
+                    <div class="sb sb-3">
+                        <img src="images/java-script.png" width="35px" />
+                        <div class="progress-container-js">
+                            <div class="progress-bar-js" id="progress-bar-js"></div>
+                        </div>
+                        <p>60%</p>
+                    </div>
+                    <div class="sb sb-4">
+                        <img src="images/react js.png" width="35px" />
+                        <div class="progress-container-react">
+                            <div class="progress-bar-react" id="progress-bar-react"></div>
+                        </div>
+                        <p>65%</p>
+                    </div>
+                </div>
+
+                <div class="box box-2">
+                    <h2>Back-End</h2>
+                    <div class="sb sb-1">
+                        <img src="images/java.png" width="35px" />
+                        <div class="progress-container-java">
+                            <div class="progress-bar-java" id="progress-bar-java"></div>
+                        </div>
+                        <p>80%</p>
+                    </div>
+                    <div class="sb sb-2">
+                        <img src="images/spring.png" width="35px" />
+                        <div class="progress-container-spring">
+                            <div class="progress-bar-spring" id="progress-bar-spring"></div>
+                        </div>
+                        <p>57%</p>
+                    </div>
+                    <div class="sb sb-3">
+                        <img src="images/c++.png" width="35px" />
+                        <div class="progress-container-c">
+                            <div class="progress-bar-c" id="progress-bar-c"></div>
+                        </div>
+                        <p>70%</p>
+                    </div>
+                    <div class="sb sb-4">
+                        <img src="images/sql-server.png" width="35px" />
+                        <div class="progress-container-sql">
+                            <div class="progress-bar-sql" id="progress-bar-sql"></div>
+                        </div>
+                        <p>65%</p>
+                    </div>
+                </div>
+
+                <div class="box box-3">
+                    <h2>Tool Used</h2>
+                    <div class="sb sb-1">
+                        <img src="images/vs.png" width="35px" />
+                        <div class="progress-container-vs">
+                            <div class="progress-bar-vs" id="progress-bar-vs"></div>
+                        </div>
+                        <p>85%</p>
+                    </div>
+                    <div class="sb sb-2">
+                        <img src="images/git.png" width="35px" />
+                        <div class="progress-container-git">
+                            <div class="progress-bar-git" id="progress-bar-git"></div>
+                        </div>
+                        <p>50%</p>
+                    </div>
+                    <div class="sb sb-3">
+                        <img src="images/github.png" width="35px" />
+                        <div class="progress-container-hub">
+                            <div class="progress-bar-hub" id="progress-bar-hub"></div>
+                        </div>
+                        <p>50%</p>
+                    </div>
+                    <div class="sb sb-4">
+                        <img src="images/Eclipse IDE.png" width="35px" />
+                        <div class="progress-container-ide">
+                            <div class="progress-bar-ide" id="progress-bar-ide"></div>
+                        </div>
+                        <p>70%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======portfilo -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work2.jpg" width="100%">
+                    <div class="layer">
+                        <h3>Library Management</h3>
+                        <p>A library management software where admin
+                            can add/view/delete librarian and librarian can add/view books, issue, view issued books and
+                            return books.</p>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg" width="100%">
+                    <div class="layer">
+                        <h3>Food Oredring System</h3>
+                        <p>Creating a successful food ordering app involves focusing on user experience and convenience.
+                            An intuitive interface allows customers to easily browse menus and customize their meals.
+                            Personalization features, such as recommendations based on past orders, enhance engagement.
+                            A seamless ordering process,
+                            including real-time order tracking and multiple payment options, streamlines the experience.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!-- -------contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Hiring Me</h1>
+                    <p>thowpicali007@gmail.com</p>
+                    <p>+91 8508407843</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/thowpicwd007"><img src="images/linkedin.png"></a>
+                        <a href="https://www.gmail.com/thowpicali007@gmail.com"><img src="images/gmail.png.png"></a>
+                        <a href="https://github.com/Thowpic"><img src="images/github.png"></a>
+                        <a href="https://www.instagram.com.thoufik_tk"><img src="images/insta.png" width="50px"></a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="enamil" placeholder=" Enter Your Email" required>
+                        <textarea name="message " rows="6" placeholder="Enter Your Opinion"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
